@@ -1,7 +1,18 @@
+// {
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ]
+// }
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
-}
+    "compilerOptions": {
+      "jsx": "react",
+      "jsx": "react",
+
+      "types": ["reflect-metadata", "jest"],
+      "typeRoots": ["./types", "./node_modules/@types"]
+    },
+    "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
+    "include": ["./src/**/*.tsx", "./src/**/*.ts"]
+  }

@@ -65,7 +65,7 @@ export default function MovieForm({ initial, onSubmit, onCancel }: Props) {
         onChange={(e) => setNotes(e.target.value)}
       />
       <Box sx={{ display: 'flex', gap: 2 }}>
-        <Button variant="contained" type="submit">
+        <Button data-testid="submit-btn" variant="contained" type="submit">
           Save
         </Button>
         <Button variant="outlined" onClick={onCancel}>

@@ -50,7 +50,7 @@ export default function MovieDetails() {
                 alt={data.Title}
                 style={{
                   width: "100%",
-                  height: "500px",      // 🔥 Reduced height
+                  height: "500px",
                   objectFit: "cover",
                 }}
               />

@@ -1,3 +1,5 @@
+
+
 import { render, screen, fireEvent } from '@testing-library/react';
 import MovieForm from '../components/ MovieForm';
 import React = require('react');
@@ -6,9 +8,7 @@ import { title } from 'process';
 const mockSave = jest.fn();
 
 //Mock crypto for Node/Jest
-global.crypto = {
-  randomUUID: () => 'test-id-123',
-} as any;
+global.crypto = { randomUUID: () => '1234-uuid' } as any;
 
 describe(' movieForm test', () => {
 
